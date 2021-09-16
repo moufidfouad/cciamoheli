@@ -1,0 +1,176 @@
+file:
+    size: "Fichier trop volumineux"
+    name:
+        min: "nom de fichier trop court"
+        max: "nom de fichier trop long"
+
+bureau:
+    titre:
+        unique: "Une entité du même titre semble déjà enregistrée"
+        blank: "Le titre de l'entité est requis"
+        max: "Le titre de l'entité ne peut dépasser 250 caractères"
+    description:
+        blank: "La description de l'entité est requise"
+    parent:
+        format: "Parent invalide"
+
+fonction:
+    titre:
+        unique: "Une fonction du même titre semble déjà enregistrée"
+        blank: "Le titre de la fonction est requis"
+        max: "Le titre de la fonction ne peut dépasser 250 caractères"
+    description:
+        blank: "La description de la fonction est requise"
+    bureau:
+        format: "Entité invalide"
+
+agent:
+    usename:
+        unique: "Un agent du même matricule semble déjà enregistré"
+        blank: "Le matricule de l'agent est requis"
+        max: "Le matricule de l'agent ne peut dépasser 50 caractères"
+    nom:
+        blank: "Le nom de l'agent est requis"
+        max: "Le nom de l'agent ne peut dépasser 100 caractères"
+    prenom:
+        blank: "Le prénom de l'agent est requis"
+        max: "Le prénom de l'agent ne peut dépasser 100 caractères"
+    telephone:
+        blank: "Le téléphone de l'agent est requis"
+        max: "Le téléphone de l'agent ne peut dépasser 50 caractères"
+    genre:
+        blank: "Le genre de l'agent est requis"
+        format: "Genre invalide"
+    ddn:
+        blank: "Le date de naissance l'agent est requise"
+        format: "Date invalide"
+    ldn:
+        max: "Ce champ ne peut dépasser 150 caractères"
+    nin:
+        blank: "Le nin de l'agent est requis"
+        max: "Ce champ ne peut dépasser 50 caractères"
+    image:
+        format: "N'est accepté qu'un fichier de format image"
+
+es:
+    dateDebut:
+        blank: "Une date de début est requise"
+        format: "Date invalide"
+    dateFin:
+        format: "Date invalide"
+
+entree:
+    forme:
+        blank: "Le type d'entrée est requis"
+        format: "Type d'entrée invalide"
+    origineExterne:
+        max: "Ce champ ne peut dépasser 250 caractères"
+    destinationInterne:
+        blank: "Fonction requise"
+        format: "Fonction invalide"
+
+mutation:
+    forme:
+        blank: "Le type de mutation est requis"
+        format: "Type de mutation invalide"
+    destinationInterne:
+        blank: "Fonction requise"
+        format: "Fonction invalide"
+
+repos:
+    forme:
+        blank: "Le type de repos est requis"
+        format: "Type de repos invalide"
+
+mission:
+    titre:
+        unique: "Une mission du même titre semble déjà enregistrée"
+        blank: "Le titre de la mission est requis"
+        max: "Le titre de la mission ne peut dépasser 100 caractères"
+    description:
+        blank: "La description de la mission est requise"
+    image:
+        blank: "Une image est requise"
+        format: "N'est accepté qu'un fichier de format image"
+
+tache:
+    titre:
+        blank: "Le titre de la tâche est requis"
+        max: "Le titre de la tâche ne peut dépasser 250 caractères"
+    description:
+        blank: "La description de la tâche est requis"
+    montant:
+        blank: "La description de la mission est requise"
+        format: "Le montant est invalide"
+    source:
+        max: "Ce champ ne peut dépasser 250 caractères"
+    debut:
+        blank: "Une date de début est requise"
+        format: "Date invalide"
+    fin:
+        format: "Date invalide"
+
+activite:
+    titre:
+        blank: "Le titre de la tâche est requis"
+        max: "Le titre de la tâche ne peut dépasser 250 caractères"
+    description:
+        blank: "La description de la tâche est requis"
+    taches:
+        min: "Au moins une tâche est requise"
+
+annonce:
+    titre:
+        blank: "Le titre est requis"
+        max: "Ce champ ne peut dépasser 250 caractères"
+    auteur:
+        max: "Ce champ ne peut dépasser 250 caractères"
+    documents:
+        min: "Au moins un fichier est requis"
+
+article:
+    titre:
+        unique: "Un article du même titre semble déjà enregistré"
+    contenu:
+        blank: "Le contenu de l'article est requis"
+    sousTitre:
+        max: "Le sous-titre de l'article ne peut dépasser 250 caractères"
+    image:
+        blank: "Une image est requise"
+        format: "N'est accepté qu'un fichier de format image"
+
+publication:
+    titre:
+        unique: "Une publication du même titre semble déjà enregistrée"
+
+rapport:
+    titre:
+        blank: "Le titre est requis"
+        max: "Ce champ ne peut dépasser 250 caractères"
+
+evenement:
+    titre:
+        blank: "Le titre de l'évènement est requis"
+        max: "Le titre de l'évènement ne peut dépasser 250 caractères"
+    description:
+        blank: "La description de l'évènement est requise"
+    debut:
+        blank: "La date de début de l'évènement est requise"
+        format: "La date n'est pas valide"
+    fin:
+        format: "La date n'est pas valide"
+    image:
+        blank: "Une image est requise"
+        format: "N'est accepté qu'un fichier de format image"
+
+tag:
+    titre:
+        unique: "Un tag du même titre semble déjà enregistré"
+        blank: "Le titre du tag est requis"
+        max: "Le titre du tag ne peut dépasser 250 caractères"
+
+subscriber:
+    email:
+        unique: "Email déjà enregistré"
+        blank: "Email requis"
+        format: "Email invalide"

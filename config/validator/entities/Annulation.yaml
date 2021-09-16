@@ -1,0 +1,12 @@
+App\Entity\Annulation:
+    properties:
+        agent:
+            - Valid:
+        dateDebut:
+            - Type:
+                type: '\DateTime'
+                message: 'es.ddn.format'
+            - NotBlank:
+                message: 'es.ddn.blank'
+        documents:
+            - Valid:

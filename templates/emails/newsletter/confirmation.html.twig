@@ -1,0 +1,8 @@
+{{ 'configuration.newsletter.confirmation.email' | trans({
+    '%href%': absolute_url(path('web_newsletter_unsubscribe',{
+        'id':id
+    })),
+    '%url%': absolute_url(path('web_newsletter_unsubscribe',{
+        'id':id
+    }))
+}) | raw }}

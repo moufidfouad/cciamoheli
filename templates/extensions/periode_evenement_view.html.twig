@@ -1,0 +1,10 @@
+
+
+{% set difference = item.fin.diff(item.debut) %}
+
+{{dump(item.debut,item.fin)}}
+{% if difference.days > 0 %}
+    {{ item.debut | format_datetime('long', 'none', locale='fr') }} - {{ item.fin | format_datetime('long', 'none', locale='fr') }}
+{% else %}
+    {{ item.debut | format_datetime('long', 'short', locale='fr') }}
+{% endif %}

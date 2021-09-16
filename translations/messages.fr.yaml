@@ -1,0 +1,510 @@
+createdAt: "Date d'enregistrement"
+updatedAt: "Date de dernière modification"
+addedAt: "Ajouté le"
+submit: "Soumettre"
+file: "Fichier"
+recent_articles: "Articles récents"
+latest_comments: "Dernier(s) commentaire(s)"
+
+
+configuration:
+    name:
+        short: "CCIA Moheli"
+        long: "La Chambre de Commerce, d'Industrie et d'Artisanat de Mohéli"
+    copyright: "Tous droits reservés à la CCIA Mohéli"
+    header: 
+        fields:
+            home: "Acceuil"
+            annonce:
+                title: "Publications"
+                label:  "Nos publications"
+                fields:
+                    article: "Blog"
+                    publication: "Espace de téléchargement"
+            mission: 
+                title: "Services"
+                label: "Nos évenements"
+            evenement: 
+                title: "Evènements"
+                label: "Nos évenements"
+            about: 
+                link: 
+                    history: "Historique"
+                title: "A propos"
+                label: "A propos de nous"
+                we: 
+                    title: "Notre équipe"
+                message: >
+                    La Chambre  de Commerce, d’Industrie et d’Art de Mohéli (CCIA-Mohéli) , mise en place en 2003, est un établissement public autonome, doté de personnalité morale qui a comme objectif de promouvoir les activités économiques à travers un partenariat efficace avec les associations et groupements,  d’appuyer les opérateurs économiques dans les demandes de crédits, l’établissement de leurs états financiers et les déclarations fiscales, et d’organiser ou participer à l’organisation des foires, des manifestations commerciales, industrielles, agricoles, artisanales et halieutiques, ainsi qu’organiser des sessions de formation pour le renforcement des capacités des opérateurs économiques. <br><br>La supervision et la gestion stratégique de CCIAM est sous la responsabilité des élus. Ces derniers constituent un groupe chargé de la politique générale, de la gestion stratégique, de l’orientation, de l’approbation des programmes d’activités et des budgets annuels. Ils jouent donc le rôle d’un conseil d’administration qui établit des conventions et/ou des contrats avec des employés et divers prestataires de services pour la réalisation des activités de l’institution.
+            blog: "Blog"
+            contact: "Contact"
+            admin: "Administration"
+    home:
+        welcome:
+            message: >
+                <span class="tit2 t-center">Nous vous souhaitons</span><h3 class="tit3 t-center m-b-35 m-t-5">Bienvenue</h3>
+        video:
+            message: >
+                    <span class="tit2 p-l-15 p-r-15">Découvrez</span><h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">notre présentation</h3>
+        mission:
+            title: "Nos services"
+            message: >
+                    <span class="tit2 p-l-15 p-r-15 text-uppercase">Découvrez</span><h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">nos missions</h3>    
+    newsletter:
+        label: "S'abonner à la boîte aux lettres"
+        message: "Vous pouvez recevoir de nos nouvelles en permanence"
+        subscription:
+            subject: "Votre abonnement à la boîte aux lettres depuis la CCIAM"
+            email: >
+                <p>Bonjour,</p><p>Pour confirmer votre abonnement, veuillez cliquer sur le lien: <a href="%href%">%url%</a></p><p>Cordialement</p>
+        unsubscription:
+            subject: "Confirmation de votre désabonnement"
+            value: >
+                <p>Bonjour,</p><p>Votre désabonnement a bien été confirmé.</p>
+            email: >
+                <p>Bonjour,</p><p>Votre désabonnement a bien été confirmé.</p><p>Au revoir!</p>
+        confirmation: 
+            subject: "Confirmation de votre abonnement"
+            value: >
+                <p>Bonjour,</p><p>Votre abonnement a bien été confirmé.</p>
+            email: >
+                <p>Bonjour,</p><p>Votre abonnement a bien été confirmé.</p><p>Vous allez donc recevoir quotidiennement de nos nouvelles</p><p>Pour annuler cet abonnement, veuillez cliquer sur le lien: <a href="%href%">%url%</a></p><p>Cordialement</p>
+        form:
+            fields:
+                email: 
+                    label: "Email"
+                    placeholder: "Entrez votre email valide"
+    contact:
+        title: "Contact"
+        label: "Contactez-nous"
+        social: "Rejoignez-nous"
+        submission:
+            subject: "Contact depuis CCIAMMOHELI.COM"
+        form:
+            label: "Laisser un message"
+            success:
+                message: "Nous accusons reception de votre message. Nous vous contacterons très prochainement."
+            fields:
+                name: 
+                    label: "Nom"
+                    placeholder: "Entrez votre nom"
+                phone: 
+                    label: "Téléphone"
+                    placeholder: "Entrez votre téléphone"
+                email: 
+                    label: "Email"
+                    placeholder: "Entrez votre email valide"
+                message: 
+                    label: "Message"
+                    placeholder: "En quoi pourrions-nous vous être utile ?"
+        fields: 
+            adresse: 
+                title: "Adresse"
+                value: "Mdjawaché Fomboni, Union des Comores"
+            email: 
+                title: "Email"
+                value: "contact@cciamoheli.com"
+            phone: 
+                title: "Téléphone"
+                value: "(+269) 722 08 35"
+            facebook: 
+                title: "Page Facebook"
+                value: "https://www.facebook.com/cciamoheli"
+            youtube: 
+                title: "Chaîne Youtube"
+                value: "https://www.youtube.com/channel/UCD_lZlsGG9CEQqne_tIsFDQ"
+        hours: 
+            label: "Heures de travail"
+            value: >
+                <li class="txt14">07:30 – 14:30 du lundi au jeudi</li><li class="txt14">07:30 – 11:30 le vendredi</li><li class="txt14">07:30 – 12:30 le samedi</li>
+
+menu:
+    admin:
+        homepage: "Tableau de bord"
+
+security:
+    login:
+        title: "Connexion"
+        username: "Nom d'utilisateur"
+        password: "Mot de passe"
+        btn: "Se connecter"
+        
+    logout: 
+        title: "Déconnexion"
+
+    change_password:
+        title: "Mon profil" 
+        old: "Mot de passe courant" 
+        new: "Nouveau mot de passe"
+        new_confirmation: "Confirmation"
+
+document:
+    add: "Ajouter un fichier"
+    remove: "Retirer le fichier"
+    empty: "Aucun fichier"
+
+link:
+    quick: "Liens rapides"
+    useful: "Liens utiles"
+
+genre:
+    homme: "Homme"
+    femme: "Femme"
+
+sortie:
+    demission: "Démission"
+    licenciement: "Licenciement"
+    misapied: "Mis à pied"
+    chomage: "Chômage"
+
+mutation:
+    affectation: "Affectation"
+    nomination: "Nomination"
+
+entree:
+    nomination: "Nomination"
+    mandat: "Mandat"
+    recrutement: "Recrutement"
+
+repos:
+    permission: "Permission"
+    conge: "Congé administratif"
+    mariage: "Congé de mariage"
+    maladie: "Congé maladie"
+    disponibilite: "Disponibilité"
+
+role:
+    article: "Gestion des articles"
+    publication: "Gestion des publications"
+    evenement: "Gestion des évènements"
+    bureau: "Gestion des bureaux"
+    fonction: "Gestion des fonctions"
+    es: "Gestion des entrées/sorties"
+    mission: "Gestion des missions"
+    activite: "Gestion des activités"
+
+entity:
+    agent:
+        name: "Agent"
+        create:
+            title: "Enregistrer un nouvel agent"
+            label: "Nouvel agent"
+        edit: 
+            title: "Modifier un agent"
+        list: 
+            label: "Les agents"
+            title: "Liste des agents"
+        show: 
+            title: "Détails d'agent"
+        fields:
+            fullname: "Nom et prénom"
+            nom: "Nom" 
+            prenom: "Prénom" 
+            genre: "Genre"   
+            ddn: "Date de naissance" 
+            ldn: "Lieu de naissance"   
+            nin: "NIN"    
+            telephone: "Téléphone"  
+            file: "Photo d'identité"    
+            username: "Matricule"
+            enabled: "En activité" 
+            published: "En affiche" 
+            es: "Parcours" 
+            roles: "Accès"
+        filters:
+            nom: "Filtrer par nom" 
+            prenom: "Filtrer par prénom" 
+            genre: "Filtrer par genre"   
+            ddn: "Filtrer par date de naissance"   
+            nin: "Filtrer par NIN"    
+            telephone: "Filtrer par téléphone"    
+            username: "Filtrer par matricule"
+            enabled: "Filtrer par activation" 
+            published: "Filtrer par affichage"  
+            roles: "Filtrer par droit d'accès"
+
+    article:
+        name: "Article"
+        create:
+            title: "Enregistrer un nouvel article"
+            label: "Nouvel article"
+        edit: 
+            title: "Modifier un article"
+        show: 
+            title: "Détails d'article"
+        list: 
+            label: "Les articles"
+            title: "Liste des articles"
+        fields:
+            titre: "Titre" 
+            soustitre: "Sous-titre" 
+            auteur: "Auteur(s)" 
+            tags: "Tags"  
+            contenu: "Contenu" 
+            file: "Image de couverture"
+
+    bureau:
+        name: "Bureau"
+        create: 
+            title: "Ajouter un bureau"
+            label: "Nouveau bureau"
+        edit: 
+            title: "Modifier un bureau"
+        show: 
+            title: "Détails de bureau"
+        list: 
+            label: "Les bureaux"
+            title: "Liste des bureaux" 
+        fields:
+            titre: "Titre" 
+            enabled: "En activité" 
+            description: "Description"
+            parent: "Parent"
+            fonctions: "Fonctions"
+
+    fonction:
+        name: "Fonction"
+        create: 
+            title: "Ajouter une fonction"
+            label: "Nouvelle fonction"
+        edit: 
+            title: "Modifier une fonction"
+        list: 
+            label: "Les fonctions"
+            title: "Liste des fonctions" 
+        show: 
+            title: "Détails de fonction"
+        fields:
+            titre: "Titre" 
+            enabled: "En activité" 
+            description: "Description"  
+            bureau: "Bureau affilié"  
+            agent: "Titulaire" 
+
+    es:
+        name: "Entrée/Sortie"
+        list: 
+            label: "Les entrées/sorties"
+            title: "Liste des entrées/sorties" 
+        fields:
+            agent: "Agent" 
+            dateDebut: "Début" 
+            dateFin: "Fin" 
+            forme: "Type" 
+            destinationInterne: "Fonction prise"
+            origineExterne: "Origine"
+            documents: "Fichier(s)"
+            es: "Concerné"  
+
+    entree:
+        name: "Entrée"
+        create: 
+            title: "Ajouter une entrée"
+            label: "Nouvelle entrée"
+        edit: 
+            title: "Modifier une entrée"
+
+
+    mutation:
+        name: "Mutation"
+        create: 
+            title: "Ajouter une mutation"
+            label: "Nouvelle mutation"
+        edit: 
+            title: "Modifier une mutation"
+
+
+    sortie:
+        name: "Sortie"
+        create: 
+            title: "Ajouter une sortie"
+            label: "Nouvelle sortie"
+        edit: 
+            title: "Modifier une sortie"
+
+    repos:
+        name: "Repos"
+        create: 
+            title: "Ajouter un repos"
+            label: "Nouveau repos"
+        edit: 
+            title: "Modifier un repos"
+            
+    annulation:
+        name: "Annulation"
+        create: 
+            title: "Ajouter une annulation"
+            label: "Nouvelle annulation"
+        edit: 
+            title: "Modifier une annulation"
+
+    document:
+        name: "Document"
+        fields:
+            file: "Fichier" 
+
+    mission:
+        name: "Mission"
+        create: 
+            title: "Ajouter une mission"
+            label: "Nouvelle mission"
+        edit: 
+            title: "Modifier une mission"
+        show: 
+            title: "Détails de mission"
+        list: 
+            label: "Les missions"
+            title: "Liste des missions" 
+        fields:
+            titre: "Titre" 
+            enabled: "En activité" 
+            description: "Description"  
+            bureau: "Entité de travail" 
+            file: "Image"
+            
+    activite:
+        name: "Activité"
+        create: 
+            title: "Ajouter une activité"
+            label: "Nouvelle activité"
+        edit: 
+            title: "Modifier une activité"
+        list: 
+            label: "Les activités"
+            title: "Liste des activités" 
+        fields:
+            titre: "Titre" 
+            documents: "Fichiers (Indicateur(s))"  
+            taches: "Tâche(s)"  
+            debut: "Du" 
+            fin: "Au"  
+            montant: "Montant" 
+            source: "Source"  
+
+    rapport:
+        name: "Rapport"
+        create: 
+            title: "Ajouter un rapport"
+            label: "Nouveau rapport"
+        edit: 
+            title: "Modifier un rapport"
+        mine: 
+            label: "Mes rapports"
+            title: "Liste de mes rapports"
+        list: 
+            label: "Tous les rapports"
+            title: "Liste de tous les rapports" 
+        fields:
+            titre: "Titre" 
+            documents: "Fichier(s)" 
+            agent: "Signataire" 
+
+    publication:
+        name: "Publication"
+        create: 
+            title: "Ajouter une publication"
+            label: "Nouvelle publication"
+        edit: 
+            title: "Modifier une publication"
+        list: 
+            label: "Toutes les publications"
+            title: "Liste de toutes les publications" 
+        fields:
+            titre: "Titre" 
+            documents: "Fichier(s)" 
+            auteur: "Auteur(es)" 
+            tags: "Tags" 
+    tache:
+        name: "Tâche"
+        fields:
+            titre: "Titre" 
+            bureaus: "Service(s)" 
+            montant: "Montant"
+            source: "Source du budget"
+            debut: "Du"
+            fin: "Au"
+
+    evenement:
+        name: "Evènement"
+        create: 
+            title: "Ajouter un évènement"
+            label: "Nouvel évènement"
+        edit: 
+            title: "Modifier un évènement"
+        list: 
+            label: "Les évènements"
+            title: "Liste des évènements" 
+        fields:
+            titre: "Titre" 
+            description: "Description"  
+            debut: "Date de début"  
+            fin: "Date de fin"
+            fileCouverture: "Image de couverture" 
+            file: "Image"
+
+    subscriber:
+        name: "Abonné(e)"
+        create: 
+            title: "Ajouter un abonné(e)"
+            label: "Nouvel(le) abonné(e)"
+        edit: 
+            title: "Modifier un abonné(e)"
+        list: 
+            label: "Les abonnés"
+            title: "Liste des abonnés" 
+        fields:
+            email: "Email" 
+            enabled: "Validé" 
+        filters:
+            email: "Filtrer par email" 
+            enabled: "Filtrer par validation" 
+
+    failedMsg:
+        list: 
+            label: "Les messages échoués"
+            title: "Liste des abonnés" 
+        fields:
+            id: "Id" 
+            title: "Namespace" 
+            receiver: "Destinataire" 
+
+    commentaire:
+        subject: "Vous pouvez commenter"
+        alert: "Votre email ne sera pas publié. Les champs requis sont marqués *"
+        success: "Votre commentaire a bien été enregistré. Après vérification, il sera publié."
+        list: 
+            label: "Les commentaires"
+            title: "Liste des commentaires" 
+        fields:
+            name:
+                label: "Nom"
+                placeholder: "Nom *"
+            email:
+                label: "Email"
+                placeholder: "Email *"
+            message:
+                label: "Message"
+                placeholder: "Votre commentaire ..."
+            enabled: "Publication"
+            article: "Article"
+
+    article_search:
+        btn: "Rechercher"
+        fields:
+            query:
+                label: "Mot-clé"
+                placeholder: "Mot-clé"
+            tags:
+                label: "Catégories"
+
+    publication_search:
+        fields:
+            query:
+                label: "Mot-clé"
+                placeholder: "Mot-clé"
+            tags:
+                label: "Catégories"
+
+
+
+close: "Fermer"

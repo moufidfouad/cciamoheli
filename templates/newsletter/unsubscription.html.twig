@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+	{{ 'configuration.newsletter.unsubscription.subject' | trans }}
+{% endblock title %}
+
+{% block content %}
+	<!-- Title Page -->
+	<section class="newsletter text-light py-5">
+		<div class="container">
+			<div class="row" >
+				<div class="col-lg-6 text-center text-lg-start" data-aos="fade-right">
+					<h4 class="py-1">{{ 'configuration.newsletter.unsubscription.subject' | trans }}</h4>
+				</div>
+				<div class="col-lg-6 align-items-center" data-aos="fade-down">
+					{{ 'configuration.newsletter.unsubscription.value' | trans | raw }}
+				</div>
+			</div> <!-- end of row -->
+		</div> <!-- end of container -->
+	</section>
+{% endblock %}

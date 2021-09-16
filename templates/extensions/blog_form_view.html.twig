@@ -1,0 +1,30 @@
+                            <div class="card text-dark bg-light shadow-lg bg-body rounded-3 mb-3">
+                                <div class="card-header bg-primary bg-gradient text-white fw-bold fs-5">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <div class="card-body about">
+                                    {{ form_start(form,{
+                                        'attr':{
+                                            'autocomplete': 'off'
+                                        }
+                                    }) }}
+                                        <div class="mb-3">
+                                            {{ form_widget(form.query,{
+                                                'attr': {
+                                                    'class':'form-control'
+                                                }
+                                            }) }}
+                                        </div>
+                                        <div class="mb-3">
+                                            <ul>
+                                                {% for tag in form.tags %}
+                                                    <li class="bo5-b p-t-8 p-b-8">
+                                                        {{ form_widget(tag) }} {{ form_label(tag) }}
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                        <input type="submit" class="btn btn-secondary text-light" value="{{ 'entity.article_search.btn' | trans }}" />
+                                    {{ form_end(form) }}
+                                </div>
+                            </div>

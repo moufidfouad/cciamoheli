@@ -1,0 +1,17 @@
+App\Entity\Activite:
+    properties:
+        titre:
+            - NotNull:
+                  message: 'activite.titre.blank'
+            - NotBlank:
+                  message: 'activite.titre.blank'
+            - Length:
+                  max: 250
+                  maxMessage: 'activite.titre.max'
+        documents:
+            - Valid:
+        taches:
+            - Count:
+                  min: 1
+                  minMessage: 'activite.taches.min'
+            - Valid:

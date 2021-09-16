@@ -1,0 +1,27 @@
+<div class="col-lg-4 d-flex">
+    <div class="card bg-transparent px-4">                        
+        <div class="block d-flex align-items-center">
+            <img class="card-img img-evenement" src="{{ vich_uploader_asset(item,'file') }}" alt="{{ item.titre }}">
+        </div>
+        <h4 class="py-2">{{ item.titre }}</h4>
+        <div class="mr-3">
+
+        <a class="btn btn-secondary text-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasItem_{{ item.id }}" aria-controls="offcanvasItem_{{ item.id }}">
+          <i class="fas fa-eye"></i>
+        </a>
+          <div class="offcanvas offcanvas-top offcanvas-evenement" data-bs-scroll="false" data-bs-backdrop="false" tabindex="-1" id="offcanvasItem_{{ item.id }}" aria-labelledby="offcanvasItem_{{ item.id }}Label">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasItem_{{ item.id }}Label">
+                {{ periode_evenement_view(item) }}
+              </h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="{{ 'close' | trans }}"></button>
+            </div>
+            <div class="offcanvas-body">
+              {{ item.description | raw }}
+            </div>
+        </div>
+
+        </div>
+    </div>  
+</div>
+

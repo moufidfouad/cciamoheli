@@ -1,0 +1,27 @@
+App\Entity\Mutation:
+    properties:
+        forme:
+            - App\Validator\IsMutation:
+                message: 'mutation.forme.format'
+            - NotBlank:
+                message: 'mutation.forme.blank'
+        agent:
+            - Valid:
+        destinationInterne:
+            - NotNull:
+                message: 'mutation.destinationInterne.blank'
+            - Type:
+                type: 'App\Entity\Fonction'
+                message: 'mutation.destinationInterne.format'
+        dateDebut:
+            - Type:
+                type: '\DateTime'
+                message: 'es.ddn.format'
+            - NotBlank:
+                message: 'es.ddn.blank'
+        dateFin:
+            - Type:
+                type: '\DateTime'
+                message: 'es.ddn.format'
+        documents:
+            - Valid:

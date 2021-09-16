@@ -1,0 +1,45 @@
+App\Entity\Article:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            fields: ['titre']
+            message: 'article.titre.unique'
+    properties:
+        titre:
+            - NotNull:
+                message: 'article.titre.blank'
+            - NotBlank:
+                message: 'annonce.titre.blank'
+            - Length:
+                max: 250
+                maxMessage: 'annonce.titre.max'
+        contenu:
+            - NotNull:
+                message: 'article.contenu.blank'
+            - NotBlank:
+                message: 'article.contenu.blank'
+        sousTitre:
+            - Length:
+                max: 250
+                maxMessage: 'article.sousTitre.max'
+        auteur:
+            - Length:
+                max: 250
+                maxMessage: 'annonce.auteur.max'
+        tags:
+            - Valid:
+
+        image:
+            - Length:
+                min: 1
+                max: 255
+                minMessage: 'file.name.min'
+                maxMessage: 'file.name.max'
+
+        file:
+            - Image:
+                maxSize: '5M'
+                maxSizeMessage: 'file.size'
+                mimeTypesMessage: 'article.image.format'
+
+        documents:
+            - Valid:

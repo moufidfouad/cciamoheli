@@ -1,0 +1,27 @@
+    {% set isEmptyCollection = value is null or (value is iterable and value is empty) %}
+    {% set is_array_field = 'EasyCorp\\Bundle\\EasyAdminBundle\\Field\\ArrayField' == form.vars.ea_crud_form.ea_field.fieldFqcn ?? false %}
+
+    <div class="ea-form-collection-items">
+        {% if isEmptyCollection %}
+            <div class="empty collection-empty">
+                {{ 'document.empty'|trans }}
+            </div>
+        {% elseif is_array_field %}
+            {{ block('form_widget') }}
+        {% else %}
+            <div class="accordion">
+                {{ block('form_widget') }}
+            </div>
+        {% endif %}
+    </div>
+
+    {% if isEmptyCollection or form.vars.prototype is defined %}
+        {% set attr = attr|merge({'data-empty-collection': block_empty }) %}
+    {% endif %}
+
+    {% if allow_add|default(false) %}
+        <button type="button" class="btn btn-link field-collection-add-button">
+            <i class="fa fa-plus pr-1"></i>
+            {{ 'document.add'|trans }}
+        </button>
+    {% endif %}

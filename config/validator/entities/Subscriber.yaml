@@ -1,0 +1,13 @@
+App\Entity\NewsLetter\Subscriber:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            fields: ['email']
+            message: 'subscriber.email.unique'
+    properties:
+        email:
+            - NotNull:
+                  message: 'subscriber.email.blank'
+            - NotBlank:
+                  message: 'subscriber.email.blank'
+            - Email:
+                  message: 'subscriber.email.format'

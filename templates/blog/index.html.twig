@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+	{{ 'configuration.header.fields.blog' | trans }}
+{% endblock title %}
+{% block stylesheets %}
+    <link href="{{ asset('build/blogobox/css/style.css') }}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+        <main class="blog pb-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12">
+                        {% include 'blog/partials/articles/_list.html.twig' with {collection: pager} only %}
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <div class="" style="margin-top: 67px;">
+                            {{ blog_form_view(app.request) }}
+                            {% include 'blog/partials/_recents.html.twig' with {collection: recent_articles(5)} only %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock content %}

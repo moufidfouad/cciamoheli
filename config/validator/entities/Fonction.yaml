@@ -1,0 +1,21 @@
+App\Entity\Fonction:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            fields: ['titre']
+            message: 'fonction.titre.unique'
+    properties:
+        titre:
+            - NotNull:
+                  message: 'fonction.titre.blank'
+            - NotBlank:
+                  message: 'fonction.titre.blank'
+            - Length:
+                  max: 250
+                  maxMessage: 'fonction.titre.max'
+        description:
+            - NotNull:
+                  message: 'fonction.description.blank'
+        bureau:
+            - Type:
+                  type: 'App\Entity\Bureau'
+                  message: 'fonction.bureau.format'

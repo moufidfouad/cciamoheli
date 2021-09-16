@@ -1,0 +1,31 @@
+App\Entity\Entree:
+    properties:
+        forme:
+            - App\Validator\IsEntree:
+                message: 'entree.forme.format'
+            - NotBlank:
+                message: 'entree.forme.blank'
+        agent:
+            - Valid:
+        origineExterne:
+            - Length:
+                max: 250
+                maxMessage: 'entree.origineExterne.max'
+        destinationInterne:
+            - NotNull:
+                message: 'entree.destinationInterne.blank'
+            - Type:
+                type: 'App\Entity\Fonction'
+                message: 'entree.destinationInterne.format'
+        dateDebut:
+            - Type:
+                type: '\DateTime'
+                message: 'es.ddn.format'
+            - NotBlank:
+                message: 'es.ddn.blank'
+        dateFin:
+            - Type:
+                type: '\DateTime'
+                message: 'es.ddn.format'
+        documents:
+            - Valid:

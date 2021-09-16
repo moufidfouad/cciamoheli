@@ -1,0 +1,16 @@
+App\Entity\Mission:
+    properties:
+        description:
+            - NotNull:
+                  message: 'mission.description.blank'
+        image:
+            - Length:
+                  min: 1
+                  max: 255
+                  minMessage: 'file.name.min'
+                  maxMessage: 'file.name.max'
+        file:
+            - Image:
+                  maxSize: '5M'
+                  maxSizeMessage: 'file.size'
+                  mimeTypesMessage: 'mission.image.format'

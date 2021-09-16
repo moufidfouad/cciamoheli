@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+	{{ 'configuration.header.fields.blog' | trans }}
+{% endblock title %}
+{% block stylesheets %}
+    <link href="{{ asset('build/blogobox/css/style.css') }}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+        <main class="blog mb-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12">
+                        {{ display_article(article,true) }}
+                        <div class="card border-primary mb-3">
+                            <div class="card-body text-dark">
+                                <div class="contact-form article-comment">
+                                    {{ form_start(form) }}
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    {{ form_widget(form.name) }}
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    {{ form_widget(form.email) }}
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    {{ form_widget(form.message) }}
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="send">
+                                                    {{ form_widget(form.submit) }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {{ form_end(form) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <div class="" style="margin-top: 67px;">
+                            {% include 'blog/partials/_recents.html.twig' with {collection: recent_articles()} only %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock content %}

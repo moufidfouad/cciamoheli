@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+	{{ 'configuration.header.fields.evenement.title' | trans }}
+{% endblock title %}
+{% block stylesheets %}
+    <link href="{{ asset('build/blogobox/css/style.css') }}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+    <section class="plans d-flex align-items-center py-5" id="plans">
+        <div class="container text-light" >
+            <div class="text-center pb-4">
+                <br><br><br>
+                <h2 class="py-2">{{ 'configuration.header.fields.evenement.label' | trans }}</h2>
+            </div>
+            <div class="row gy-4" data-aos="zoom-in">
+                {% include 'evenement/partials/_list.html.twig' with {collection: pager} only %}
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of plans -->
+{% endblock content %}

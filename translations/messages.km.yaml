@@ -1,0 +1,89 @@
+submit: "Pveleha"
+recent_articles: "Ma trangazo ya nyumeni"
+
+configuration:
+    name:
+        short: "CCIAM"
+        long: "Djumba la Biyachra na Soinaan la Mwali"
+    copyright: "Haki piya za Djumba la biyachara bassi"
+    header: 
+        fields:
+            home: "Nyumbani"
+            annonce:
+                title:  "Ma trangazo yatru"
+                fields:
+                    article: "Blog"
+                    publication: "Chandza cha oupvahua"
+            gallery: "Bonesso"
+            about: 
+                link: 
+                    history: "Zarihusu"
+                title: "Zarihusu"
+                message: >
+                    Djumba la Biyachra na Soinaan la Mwali (CCIA-Mohéli) , yakentsi kirasmi moiha 2003, lino djumba la daula, la udjidjenga, la milikichwa hutwamu za upva nguvu mtsangayo wa yi biyachara ha ndzia za mikussamagno,  na usayidia ma bahazazi harimwa makopo ya banki, na utria ndziani mahafali ya biyachara mba na mbali wadjau na upanga zi aina za missomo za ubarikicha ma bahazazi na zi biyachara zao.<br><br>Myenchi wa li djumba lino ngo harmwa djuhukumu la wana wa chama wa chagulwa. wano de wakao na yi swarafa ya mali na  hazi na maendeleo lino djumba.
+            blog: "Blog"
+            contact: "Mawaswiliano"
+            admin: "Idara"
+    home:
+        welcome:
+            message: >
+                <span class="tit2 t-center">Ngueri mu bushuriano ni</span><h3 class="tit3 t-center m-b-35 m-t-5">Mdjo mwemwa</h3>
+        video:
+            message: >
+                <span class="tit2 p-l-15 p-r-15">Ngalia</span><h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">pitcha lino</h3>    
+        mission:
+            message: >
+                    <span class="tit2 p-l-15 p-r-15 text-uppercase">Zino de </span><h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">zi hutwamu zatru</h3>   
+    newsletter:
+        label: "Dji sadjili harimwa li sanduku la barua"
+        subscription:
+            subject: "Usadjili waho harimwa li sanduku la CCIAM"
+            email: >
+                <p>Ntossa dju laho,</p><p>Ili uthibiticha usadjili waho, tafadhwali ou reme pvano: <a href="%href%">%url%</a></p><p>Bahati ndjema</p>
+        unsubscription:
+            subject: "Mthibitisho wa mdjiuzulu waho"
+            value: >
+                <p>Ntossa,</p><p>Rithibitisha mdjiuzulu waho.</p>
+            email: >
+                <p>Ntossa,</p><p>Rithibitisha mdjiuzulu waho.</p><p>Kwaheri!</p>
+        confirmation: 
+            subject: "Mthibitisho wa usadjili waho"
+            value: >
+                <p>Ntossa,</p><p>Ritihibitisha usadjili waho.</p>
+            email: >
+                <p>Ntossa,</p><p>Ritihibitisha usadjili waho.</p><p>Utso nda na upara habari zatru ngayo ha ngayo</p><p>Ili wu uzulu usadjili, tafadhwali ureme pvano: <a href="%href%">%url%</a></p><p>Cordialement</p>
+        form:
+            fields:
+                email: 
+                    label: "imeli"
+                    placeholder: "Uandziha imeli yaho ya kweli"
+    contact:
+        title: "Mawaswiliano"
+        label: "Waswiliana na wasi"
+        social: "Dji unngue na wassi"
+        form:
+            label: "Upveleha risala"
+            success:
+                message: "Ritakabadhi risala yaho. Ritso waswiliana na wawe tsi hale."
+            fields:
+                name: 
+                    label: "Dzina"
+                    placeholder: "Uandziha dzina laho"
+                phone: 
+                    label: "Telefoni"
+                    placeholder: "Uandziha telefoni yaho"
+                email: 
+                    label: "Imeli"
+                    placeholder: "Uandziha imeli yaho ya kweli"
+                message: 
+                    label: "Rissala"
+                    placeholder: "Namna djedje ridjo chinda rihu sayidiye ?"
+        fields: 
+            adresse: "Mdjawaché Fomboni, Umodja wa Komor"
+            email: "contact@cciamoheli.com"
+            phone: "(+269) 332 37 38"
+            facebook: "https://www.facebook.com/cciamoheli"
+        hours: 
+            label: "Saa za hazi"
+            value: >
+                <li class="txt14"> saa ya handa wa nusu ta saa ya nane wa nusu rangu fumoraru ta yahoa</li><li class="txt14">saa ya handa wa nusu ta saa ya nne wa nusu i djumwa</li><li class="txt14">saa ya handa wa nussu ta saa sita wa nusu i fumontsi</li>

@@ -1,0 +1,4 @@
+{% set documents = entity.fields.getByProperty('documents').value %}
+{% for document in documents %}
+    <span class="badge badge-primary"><a href="{{ vich_uploader_asset(document,'file') }}">{{ 'file' | trans }} {{ loop.index }}</a></span> {% if not loop.last %}<br>{% endif %}
+{% endfor %}

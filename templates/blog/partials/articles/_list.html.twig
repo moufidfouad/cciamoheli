@@ -1,0 +1,4 @@
+{% for item in collection %}
+    {% include 'blog/partials/articles/_item.html.twig' with {item: item} only %}
+{% endfor %}
+{{ knp_pagination_render(collection,'extensions/paginator.html.twig') }}

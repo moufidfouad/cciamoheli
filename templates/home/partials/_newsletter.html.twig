@@ -1,0 +1,14 @@
+<!-- Newsletter -->
+<section class="newsletter text-light py-5">
+    <div class="container">
+        <div class="row" >
+            <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right">
+                <h4 class="py-1">{{ 'configuration.newsletter.label' | trans }}</h4>
+                <p class="para-light">{{ 'configuration.newsletter.message' | trans }}</p>
+            </div>
+            <div class="col-lg-6 align-items-center" data-aos="fade-down">
+                {{ newsletter_form_view(app.request) }}
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section> <!-- end of newsletter -->

@@ -1,0 +1,43 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        evenement:
+            uri_prefix: '/%vich.path.evenement_images%'
+            upload_destination: '%kernel.project_dir%/public/%vich.path.evenement_images%'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+            inject_on_load: false
+            delete_on_update: true
+            delete_on_remove: true
+
+        article:
+            uri_prefix: '/%vich.path.article_images%'
+            upload_destination: '%kernel.project_dir%/public/%vich.path.article_images%'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+            inject_on_load: false
+            delete_on_update: true
+            delete_on_remove: true
+
+        agent:
+            uri_prefix: '/%vich.path.agent_images%'
+            upload_destination: '%kernel.project_dir%/public/%vich.path.agent_images%'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+            inject_on_load: false
+            delete_on_update: true
+            delete_on_remove: true
+
+        mission:
+            uri_prefix: '/%vich.path.mission_images%'
+            upload_destination: '%kernel.project_dir%/public/%vich.path.mission_images%'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+            inject_on_load: false
+            delete_on_update: true
+            delete_on_remove: true
+
+        document:
+            uri_prefix: '/%vich.path.document_files%'
+            upload_destination: '%kernel.project_dir%/public/%vich.path.document_files%'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+            inject_on_load: false
+            delete_on_update: true
+            delete_on_remove: true

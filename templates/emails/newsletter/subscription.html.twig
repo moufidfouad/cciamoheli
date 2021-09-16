@@ -1,0 +1,7 @@
+{% set url = url('web_newsletter_confirm',{
+        'token':token
+    }) %}
+{{ 'configuration.newsletter.subscription.email' | trans({
+    '%href%': url,
+    '%url%': url
+}) | raw }}

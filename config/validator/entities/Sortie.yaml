@@ -1,0 +1,21 @@
+App\Entity\Sortie:
+    properties:
+        forme:
+            - App\Validator\IsSortie:
+                message: 'sortie.forme.format'
+            - NotBlank:
+                message: 'sortie.forme.blank'
+        agent:
+            - Valid:
+        dateDebut:
+            - Type:
+                type: '\DateTime'
+                message: 'es.ddn.format'
+            - NotBlank:
+                message: 'es.ddn.blank'
+        dateFin:
+            - Type:
+                type: '\DateTime'
+                message: 'es.ddn.format'
+        documents:
+            - Valid:

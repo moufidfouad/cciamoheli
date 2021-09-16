@@ -1,0 +1,70 @@
+App\Entity\Agent:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            fields: ['username']
+            message: 'agent.username.unique'
+    properties:
+        username:
+            - NotNull:
+                  message: 'agent.username.blank'
+            - NotBlank:
+                  message: 'agent.username.blank'
+            - Length:
+                  max: 50
+                  maxMessage: 'agent.username.max'
+        nom:
+            - NotNull:
+                  message: 'agent.nom.blank'
+            - NotBlank:
+                  message: 'agent.nom.blank'
+            - Length:
+                  max: 100
+                  maxMessage: 'agent.nom.max'
+        prenom:
+            - NotNull:
+                message: 'agent.prenom.blank'
+            - NotBlank:
+                message: 'agent.prenom.blank'
+            - Length:
+                max: 100
+                maxMessage: 'agent.prenom.max'
+        telephone:
+            - NotNull:
+                message: 'agent.telephone.blank'
+            - NotBlank:
+                message: 'agent.telephone.blank'
+            - Length:
+                max: 100
+                maxMessage: 'agent.telephone.max'
+        genre:
+            - App\Validator\IsGenre:
+                message: 'agent.genre.format'
+            - NotBlank:
+                message: 'agent.genre.blank'
+        ddn:
+            - Type:
+                type: '\DateTime'
+                message: 'agent.ddn.format'
+            - NotBlank:
+                message: 'agent.ddn.blank'
+        ldn:
+            - Length:
+                max: 150
+                maxMessage: 'agent.ldn.blank'
+        nin:
+            - NotBlank:
+                message: 'agent.nin.blank'
+            - Length:
+                max: 150
+                maxMessage: 'agent.nin.blank'
+        image:
+            - Length:
+                  min: 1
+                  max: 255
+                  minMessage: 'file.name.min'
+                  maxMessage: 'file.name.max'
+        file:
+            - Image:
+                  maxSize: '5M'
+                  maxSizeMessage: 'file.size'
+                  mimeTypesMessage: 'agent.image.format'

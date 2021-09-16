@@ -1,0 +1,15 @@
+<div class="bg-light shadow bg-body rounded-3 mb-3">
+    <div class="card-header bg-primary bg-gradient text-white fw-bold fs-5">
+        {{ 'recent_articles' | trans }}
+    </div>
+    <ul class="list-group list-group-flush mb-2">
+        {% for item in collection %}
+        <li class="list-group-item">
+            <a href="{{ path('web_blog_show',{slug: item.slug}) }}" class="black-title">{{ item.titre }}</a>
+            <div>
+                <small class="text-muted">{{ item.createdAt | ago }}</small>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

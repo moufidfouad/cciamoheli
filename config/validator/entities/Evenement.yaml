@@ -1,0 +1,41 @@
+App\Entity\Evenement:
+    properties:
+        titre:
+            - NotNull:
+                message: 'evenement.titre.blank'
+            - NotBlank:
+                message: 'evenement.titre.blank'
+            - Length:
+                max: 250
+                maxMessage: 'evenement.titre.max'
+
+        description:
+            - NotNull:
+                message: 'evenement.contenu.blank'
+            - NotBlank:
+                message: 'evenement.contenu.blank'
+                
+        debut:
+            - NotNull:
+                message: 'evenement.debut.blank'
+            - Type:
+                type: '\DateTime'
+                message: 'evenement.debut.format'
+
+        fin:
+            - Type:
+                type: '\DateTime'
+                message: 'evenement.fin.format'
+
+        image:
+            - Length:
+                min: 1
+                max: 255
+                minMessage: 'file.name.min'
+                maxMessage: 'file.name.max'
+
+        file:
+            - Image:
+                maxSize: '5M'
+                maxSizeMessage: 'file.size'
+                mimeTypesMessage: 'evenement.image.format'

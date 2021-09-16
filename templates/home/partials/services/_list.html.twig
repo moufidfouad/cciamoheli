@@ -1,0 +1,13 @@
+<!-- Services -->
+<section class="services d-flex align-items-center py-5" id="services">
+    <div class="container text-light">
+        <div class="text-center pb-4">
+            <h2 class="py-2">{{ 'configuration.home.mission.title' | trans }}</h2>
+        </div>
+        <div class="row gy-4 py-2" data-aos="zoom-in">
+            {% for item in list %}
+                {% include 'home/partials/services/_item.html.twig' with {item: item} only %}
+            {% endfor %}
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section> <!-- end of services -->

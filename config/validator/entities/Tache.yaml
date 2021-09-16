@@ -1,0 +1,31 @@
+App\Entity\Tache:
+    properties:
+        titre:
+            - NotNull:
+                  message: 'tache.titre.blank'
+            - NotBlank:
+                  message: 'tache.titre.blank'
+            - Length:
+                  max: 250
+                  maxMessage: 'tache.titre.max'
+        montant:
+            - NotBlank:
+                  message: 'tache.montant.blank'
+            - Positive:
+                  message: 'tache.montant.format'
+        source:
+            - Length:
+                  max: 250
+                  maxMessage: 'tache.source.max'
+        debut:
+            - Type:
+                  type: '\DateTime'
+                  message: 'fonction.debut.format'
+            - NotNull:
+                  message: 'tache.debut.blank'
+        fin:
+            - Type:
+                  type: '\DateTime'
+                  message: 'fonction.fin.format'
+        bureaus:
+            - Valid:

@@ -1,0 +1,28 @@
+App\Entity\Publication:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+            fields: ['titre']
+            message: 'publication.titre.unique'
+    properties:
+        titre:
+            - NotNull:
+                message: 'publication.titre.blank'
+            - NotBlank:
+                message: 'annonce.titre.blank'
+            - Length:
+                max: 250
+                maxMessage: 'annonce.titre.max'
+
+        auteur:
+            - Length:
+                max: 250
+                maxMessage: 'annonce.auteur.max'
+
+        tags:
+            - Valid:
+
+        documents:
+            - Count:
+                min: 1
+                minMessage: 'annonce.documents.min'
+            - Valid:

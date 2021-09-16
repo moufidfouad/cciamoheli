@@ -1,0 +1,21 @@
+App\Entity\Repos:
+    properties:
+        forme:
+            - App\Validator\IsRepos:
+                message: 'repos.forme.format'
+            - NotBlank:
+                message: 'repos.forme.blank'
+        agent:
+            - Valid:
+        dateDebut:
+            - Type:
+                type: '\DateTime'
+                message: 'es.ddn.format'
+            - NotBlank:
+                message: 'es.ddn.blank'
+        dateFin:
+            - Type:
+                type: '\DateTime'
+                message: 'es.ddn.format'
+        documents:
+            - Valid:

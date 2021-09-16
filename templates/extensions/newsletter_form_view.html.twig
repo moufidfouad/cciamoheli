@@ -1,0 +1,16 @@
+{{ form_start(form,{
+    'attr':{
+        'autocomplete': 'off',
+        'data-controller':'newsletter'
+    }
+}) }}
+<div class="input-group my-3">
+    {{ form_widget(form.email) }}
+    {{ form_widget(form.submit) }}
+</div>
+<div class="input-group my-3">
+    <span class="text-danger m-10 error-wrapper">
+        <ul></ul>
+    </span>
+</div>
+{{ form_end(form) }}

@@ -1,0 +1,14 @@
+App\Entity\Commentaire:
+    properties:
+        name:
+            - NotNull:
+            - NotBlank:
+            - Length:
+                max: 150
+        email:
+            - NotNull:
+            - NotBlank:
+            - Email:
+        message:
+            - NotNull:
+            - NotBlank:

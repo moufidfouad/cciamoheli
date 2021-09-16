@@ -1,0 +1,38 @@
+{{ form_start(form,{
+    'attr':{
+        'autocomplete': 'off',
+        'data-controller':'contact'
+    }
+}) }}
+<div class="text-center text-lg-start py-4 pt-lg-0">
+    <h2 class="py-2">{{ 'configuration.contact.form.label' | trans }}</h2>
+</div>
+<div>    
+    <div class="row">
+        <span class="text-danger m-10 error-wrapper">
+            <ul></ul>
+        </span>
+    </div>
+    <div class="row" >                                
+        <div class="col-lg-6">
+            <div class="form-group py-2">
+                {{ form_widget(form.name) }}
+            </div>                                
+        </div>
+        <div class="col-lg-6">
+            <div class="form-group py-2">
+                {{ form_widget(form.phone) }}
+            </div>                                 
+        </div>
+    </div>
+    <div class="form-group py-1">
+        {{ form_widget(form.email) }}
+    </div>  
+    <div class="form-group py-2">
+        {{ form_widget(form.message) }}
+    </div>                            
+</div>
+<div class="my-3">
+    {{ form_widget(form.submit) }}
+</div>
+{{ form_end(form) }}
