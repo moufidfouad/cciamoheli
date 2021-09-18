@@ -5,6 +5,11 @@ submit: "Soumettre"
 file: "Fichier"
 recent_articles: "Articles récents"
 latest_comments: "Dernier(s) commentaire(s)"
+error:
+    unexpected:
+        message: "Une erreur est survenue"
+    back: >
+            <p class="text-center">Désolé pour le désagrément</p><p class="text-center"><a href="%url%">Retour à l'acceuil</a></p>
 
 
 configuration:

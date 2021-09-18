@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+	{{ 'configuration.header.fields.blog' | trans }}
+{% endblock title %}
+{% block stylesheets %}
+    <link href="{{ asset('build/blogobox/css/style.css') }}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+        <main class="blog pt-12" style="padding-top: 10em;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="card shadow rounded-3 mb-2 mt-4" style="background-color: #3387f5ee;">
+                            <div class="card-body text-dark">
+                                <h3 class="card-title text-center mb-2">{{ 'error.unexpected.message' | trans }}</h3> 
+                                <br>
+                                {{ 'error.back' | trans({'%url%': path('web_index')}) | raw }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock content %}
